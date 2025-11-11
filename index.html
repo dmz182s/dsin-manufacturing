@@ -159,7 +159,7 @@
 /*****************************************/
 .solutions {
   /* The image used */
-  background-image: url(assets/img/slider-2.jpg);
+  background-image: url(assets/img/footer-bg3.png);
 
   /* Set a specific height */
   min-height: 500px;
@@ -247,14 +247,36 @@
 </head>
 
 <body>
+  <!-- Google Translate Script -->
+  <div id="google_translate_element" style="display: none;"></div>
 
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,id',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    function setLanguage(lang) {
+      var select = document.querySelector(".goog-te-combo");
+      if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event("change"));
+      }
+    }
+  </script>
+
+  <!-- Mulai konten -->
   <header id="header" class="fixed-top">
     <div class="container">
 
       <div class="logo float-left">
-        
-        <!-- <h1 class="text-light"><a href="index.html"><span>Our-Compnay Associate</span></a></h1> -->
-        <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <a href="/"><img src="assets/img/Dsinlogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -262,15 +284,23 @@
           <li class="active"><a href="#header">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Our Work</a></li>
-          <li><a href="#faq">Case Studies</a></li>
-          <li><a href="#team">Solutions</a></li>
-		      <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#faq">Scope of Work</a></li>
+          <li><a href="#team">Machine</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              🌐 Language
+            </a>
+            <div class="dropdown-menu" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#" onclick="setLanguage('en')">English</a>
+              <a class="dropdown-item" href="#" onclick="setLanguage('id')">Indonesia</a>
+            </div>
+          </li>
         </ul>
-            
-      </nav><!-- .nav-menu -->
-
+      </nav>
     </div>
-  </header><!-- End #header -->
+  </header>
 
   <!-- ======= Hero Section ======= -->
   <section >
@@ -278,32 +308,23 @@
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg.png)">
+        <div class="carousel-item active" style="background-image: url(assets/img/footer-bg2.png)">
           <div class="carousel-caption">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant, agile yet simple technological solutions for financial services providers</p>
+            <h2 class="display-4">DSIN MANUFACTURING</h2>
+            <p class="lead">Creating with high accuracy — every detail is made with care and expertise</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/slider-2.jpg)">
+        <div class="carousel-item" style="background-image: url(assets/img/footer-bg3.png)">
           <div class="carousel-caption ">
-            <h2 class="display-4">Our-Compnay</h2>
-            <p class="lead">Delivering relevant technologies for our times</p>
+            <h2 class="display-4">DSIN MANUFACTURING</h2>
+            <p class="lead">Ensuring top quality — delivering outstanding results that exceed expectations</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url(assets/img/covid.jpg)">
-          <div class="carousel-caption covid-block">
-            <h2 class="display-4">We are in this together.</h2>
-            <p class="lead" style="background: rgba(0, 0, 0, 0.7); border-radius: 3px;">Our Organisation is committed on taking recommendations from the health authorities,
-               WHO (World Health Organisation) and our local authority. Our company is committed to follow
-              the guidelines which includes, refraining from non-essential travelling, self-isolation upon return
-              from any affected areas, social distancing, wearing of musk’s and use of hand sanitizer.</p>
-          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -330,23 +351,24 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/Fapas.png" class="img-fluid" alt="">
+            <img src="assets/img/work/Fapas.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1">
             <h3>What we do</h3>
             <p class="">
-              Specialist in financial services software solutions to help financial services providers unlock
-business growth and digital transformation through innovation and technology.
+              Is a specialist in manufacturing solutions, helping industries achieve operational 
+              excellence and sustainable growth through innovation, precision, and advanced 
+              technology.
             </p>
             <p>
-              Our-Compnay focuses on delivering relevant, agile yet simple technological solutions
-for financial services providers in the emerging markets. Our solutions give a better user
-interface to wealth managers, fund managers, insurance brokers /companies and other financial
-services providers with minimum costs.
+              Our company focuses on delivering high-quality, efficient, yet simple manufacturing
+               solutions designed to meet the needs of modern industries. Our products and processes
+                provide greater reliability, consistency, and value with optimized costs.
             </p>
             <p>
-              As a simple rule, we do not aim to be the most dominant software provider in our space, but we
-aim to be the best in the niche that we serve.
+              As a simple rule, we do not aim to be the largest manufacturer in the industry 
+              — we aim to be the best in the niche we serve, upholding our commitment to 
+              “Crafting Precision, Delivering Excellence.”
             </p>
           </div>
         </div>
@@ -360,10 +382,16 @@ aim to be the best in the niche that we serve.
 
         <div class="section-title">
           <h2>Our Work</h2>
-          <p>Our-Compnay focuses on bringing cloud-based solutions to financial services
-providers. Our aim is not only to drastically reduce service managers time, effort, and cost but to
-offer Our-Compnay Associates’ experience ensuring the speedy and successful implementation of
-cloud-based systems.</p>
+          <p>Reflects our passion for precision and innovation. From concept to production, 
+            every process is handled with meticulous attention to detail, ensuring each product 
+            meets international standards of quality and performance. We continuously improve our 
+            manufacturing systems to enhance efficiency, reduce waste, and increase product 
+            reliability. Whether it’s creating custom components, engineering high-precision parts, 
+            or developing complete manufacturing solutions, we work hand-in-hand with our clients 
+            to deliver excellence in every outcome..</p>
+          <p>
+
+          </p>
         </div>
 
         
@@ -383,41 +411,55 @@ cloud-based systems.</p>
           <h2 style="color: #fff;">Our approach</h2>
         </div>
 
-          <p>Our company approach focuses on bringing a better user interface for our client’s business to
-meet the emerging business environments. We achieve this through our Three Phase Process</p>
+          <p>We implement a structured and results-driven approach to ensure every project
+             achieves the highest standards of quality and efficiency. Our methodology is 
+             divided into three key phases designed to deliver precision and consistency 
+             at every stage.</p>
 
 <div class="container-fluid">
-  <div class="col-md-12">
-      <div class="row main">
-          <div class="wrap wrap--3 col-md-3">
-            <h6 style="color: #fff; text-align: right;">01. System Alignment Phase </h6>
-              <div class="container container--3 ">
-                  <p>Serves to determine the scope, resourcing, and timeframes for a Project Implementation
-                    Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3  col-md-3">
-              <h6 style="color: #fff; text-align: right;">02.   Implementation Phase</h6>
-              <div class="container container--3 ">
-		<p>Delivering the tasks necessary to allow the FA portfolio administration systems to run live.
-These tasks will be mutually agreed and detailed in the System Alignment Phase</p>
-              </div>
-            </div>
-          
-            <div class="wrap wrap--3 col-md-3">
-              <h6 style="color: #fff; text-align: right;">03. Monthly Ongoing Phase</h6>
-              <div class="container container--3 ">
-                <p>
-                  Includes time to be used for on–going development as well as pure support and
-            maintenance.</p>
-            
-              </div>
-            </div>
-          
+  <div class="row main">
+    
+    <!-- Phase 1 -->
+    <div class="col-md-4 wrap wrap--3">
+      <h6 class="text-end" style="color: #fff;">01. Planning and Alignment Phase</h6>
+      <div class="container container--3">
+        <p>
+          We begin by conducting a comprehensive analysis of the client’s needs,
+          defining project scope, required resources, and efficient production timelines.
+          This phase ensures all expectations are aligned before production begins.
+        </p>
       </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="col-md-4 wrap wrap--3">
+      <h6 class="text-end" style="color: #fff;">02. Production and Implementation Phase</h6>
+      <div class="container container--3">
+        <p>
+          This phase involves the execution of the manufacturing process using
+          modern equipment and advanced techniques. Every component is produced
+          with meticulous precision to meet technical specifications and deliver
+          superior product quality.
+        </p>
+      </div>
+    </div>
+
+    <!-- Phase 3 -->
+    <div class="col-md-4 wrap wrap--3">
+      <h6 class="text-end" style="color: #fff;">03. Maintenance and Continuous Improvement Phase</h6>
+      <div class="container container--3">
+        <p>
+          After production, we remain committed through ongoing maintenance,
+          performance evaluations, and continuous improvement initiatives.
+          This phase ensures our products sustain long-term reliability and
+          continue to deliver value for our clients.
+        </p>
+      </div>
+    </div>
+
   </div>
 </div>
+
         </div>
       </div>
     </section><!-- End Call To Action Section -->
@@ -425,141 +467,233 @@ These tasks will be mutually agreed and detailed in the System Alignment Phase</
     
 
     <!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="solutions py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h1 class="fw-bold text-dark">Scope of Work</h1>
+      <p class="text-secondary">
+        As a growing manufacturing company, we provide a wide range of industrial solutions 
+        and accept various types of projects, including:
+      </p>
+    </div>
 
-    <section id="faq" class="solutions">
-      <div class="wrapper">
-        <h1>Case Studies</h1>
-        <ul class="panels">
-          <div class="row">
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                An investment manager inherited an asset management business from a leading Pan-African
-bank with a view of modernizing the operation and scaling. Our-Compnay was approached to offer
-a cloud-based administration system which allowed clients, administrators and portfolio
-managers to have a full view of their portfolio from a portal.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-            <p>
-              Capitalizing on many years of experience in the financial services sector, Our-Compnay
-Associates offered an innovative end-to-end Investment Solution that utilized cloud-based
-technology to provide a functionally rich and versatile platform that supports the Front, Middle
-and Back Office requirements. That is, from trade execution, transaction processing, portfolio
-management reporting, compliance, and performance measurement. In 2020, the business has
-scaled considerably with minimal disruptions to operations. More so, they avoided downtime
-when lockdowns were implemented in 2020 since administrators could work from anywhere.
+    <div class="row g-4 text-dark">
+      
+      <!-- SPM -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/spm.jpg" class="card-img-top rounded-top-3" alt="SPM Machine">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">SPM (Special Purpose Machine)</h6>
+            <p class="mb-0">
+              Design and fabrication of customized machines tailored to specific production requirements.
             </p>
-            </div>
-          </li>
-          <li class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                After succeeding in servicing its institutional client base, a business wanted to extend the
-current service to high-net-worth individuals. Our-Compnay was approached because the provider
-needed a technology partner to help them deliver a dynamic solution to meet the continuously
-evolving needs of their new market.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-              <h6>Solution</h6>
-              <p>
-                Our-Compnay designed a system that allowed the Relationship managers to focus on their clients
-rather than the administration processes. The solution allowed the manager to have a 360° view
-for clients’ and funds’ investments monitoring. Clients have 24/7 access to their portfolio
-investments through integrated web modules.
-              </p>
-            </div>
-          </li>
-          <li  class="col-md-4">
-            <div class="front" style="background: #203954">
-              <h6>Problem</h6>
-              <p>
-                An insurance company which offers regional funeral cover approached our company.
-Our-Compnay was approached to offer a cloud-based system which is easily accessible to clients
-when they want to pay premiums, seek insurance advice, and claim benefits. The accessibility
-was supposed to stretch across all communication platforms. Operationally, the system the
-provider also wanted a system that captured information from via a cloud-based portal whilst it
-allows it to gain customer insights through data analysis.
-              </p>
-            </div>
-            <div class="back" style="background: #020a20">
-            <h6>Solution</h6>
-              <p>Our-Compnay actuarial analysts initially interpreted client’s business and through our innovative
-                associates, we came up with a cloud-based system easily accessible to insurance company
-                users. We offered a partnership with the insurance company through providing a dynamic
-                technological solution. Our solution included good user interface for both the administrators and
-                the company’s clients. This came without compromising the useful data tools that will help the
-                insurer.</p>
           </div>
-          </li>
-         
         </div>
-        
-         
-        </ul>
-      </div>
-    </section>
-<!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" style="text-align: center;">
-      <div class="section-title">
-        <h2>Technology and Security</h2>
       </div>
 
-        <p>Our-Compnay uses cloud based Microservices. Hosted on-premises or cloud scalable solution.
-          Driving highest business value through latest best in class technologies pinned by simplified
-          user-friendly approach adhering to Industry standards.</p>
-          <p>The client can be rest assured that the data is safe and secure in a state-of-the-art Data Centre
-            and compliant with relevant legislation.</p>
-        <div class="col-md-8 offset-md-2">
-          <img src="assets/img/quarkus_logo_vertical_rgb_1280px_default.png" class="rounded" width="100"  height="100" alt="...">
-          <img src="assets/img/java-logo-1.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/1561951216183.png" class="rounded " width="100"  height="100" alt="...">
-          <img src="assets/img/thumbnail-139148.png" class="rounded " width="100"  height="100" alt="...">
+      <!-- Jig & Fixture -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/JIG.png" class="card-img-top rounded-top-3" alt="Jig & Fixture">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Jig & Fixture</h6>
+            <p class="mb-0">
+              Development of precision tools and fixtures to enhance production accuracy and efficiency.
+            </p>
+          </div>
         </div>
-       
       </div>
-    </section><!-- End Our Team Section -->
 
-    <section id="" class="why-us" style="color: #fff;">
-      <div class="container" style="text-align: center;">
-        <div class="section-title">
-          <h2 style=" color: #fff;">Why Us</h2>
+      <!-- Industrial Parts -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/industri.png" class="card-img-top rounded-top-3" alt="Industrial Parts">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Industrial Parts</h6>
+            <p class="mb-0">
+              Manufacturing of high-precision industrial components for various applications.
+            </p>
+          </div>
         </div>
-          <p>Our-Compnay commenced business in 2016 after three years of designing and working
-  on a solution for its first client in South Africa. Our-Compnay is made up of
-  professionals with a good blend of financial and software expertise. Founders have a combined
-  experience of 28 years providing solutions to the financial services sector in Africa.</p>
-  <div class="text-center"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to request for Demo</button></div>
- 
-  <div class="collapse" id="collapseExample">
-    <div class="col-lg-5 col-md-12">
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-        <div class="form-group">
-          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-          <div class="validate"></div>
+      </div>
+
+      <!-- Automotive Parts -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/otomotif.png" class="card-img-top rounded-top-3" alt="Automotive Parts">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Automotive Parts</h6>
+            <p class="mb-0">
+              Production of automotive components for different vehicle and machinery needs.
+            </p>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-          <div class="validate"></div>
+      </div>
+
+      <!-- Plantation Industry -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/agric.png" class="card-img-top rounded-top-3" alt="Plantation Industry">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Plantation Industry</h6>
+            <p class="mb-0">
+              Fabrication and supply of equipment and components supporting plantation operations.
+            </p>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please tell us why you need a demo" placeholder="Message"></textarea>
-          <div class="validate"></div>
+      </div>
+
+      <!-- Agricultural Industry -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/plantation-1.png" class="card-img-top rounded-top-3" alt="Agricultural Industry">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Agricultural Industry</h6>
+            <p class="mb-0">
+              Design and production of agricultural tools and machinery to improve productivity and performance.
+            </p>
+          </div>
         </div>
-        <div class="text-center"><button class="btn btn-info" type="submit">Send Request</button></div>
-      </form>
+      </div>
+
+      <!-- Fabrication Works -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/fabrication.png" class="card-img-top rounded-top-3" alt="Fabrication Works">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Fabrication Works</h6>
+            <p class="mb-0">
+              Metal fabrication, structural assembly, and custom engineering services based on client specifications.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Others -->
+      <div class="col-md-3 col-sm-6 d-flex">
+        <div class="card border-0 flex-fill shadow-sm rounded-3 mb-4 overflow-hidden">
+          <img src="assets/img/work/other.png" class="card-img-top rounded-top-3" alt="Others">
+          <div class="card-body">
+            <h6 class="fw-semibold text-primary">Others-(Laser Cutting)</h6>
+            <p class="mb-0">
+              Providing other manufacturing and engineering solutions according to customer needs and technical challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-      </div>
-    </section>
+</section>
 
+
+<!-- End Frequently Asked Questions Section -->
+
+<!-- ======= Supporting Machines Section ======= -->
+<section id="team" class="teampy-3 bg-white">
+  <div class="container text-center">
+    <div class="section-title mb-3">
+      <h3 class="fw-semibold text-dark mb-4">Supporting Machines</h3>
+    </div>
+
+    <div class="row g-3 justify-content-center">
+
+      <!-- CNC 3-Axis Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/cnc.png" class="card-img-top rounded-top-4" alt="CNC 3-Axis Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">CNC 3-Axis Machine</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lathe Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/Milling.png" class="card-img-top rounded-top-4" alt="Lathe Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">Milling Machine</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Turning Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/lathe.png" class="card-img-top rounded-top-4" alt="Turning Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">Turning Machine</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laser Cutting Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/laser.png" class="card-img-top rounded-top-4" alt="Laser Cutting Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">Laser Cutting Machine</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welding Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/welding.png" class="card-img-top rounded-top-4" alt="Welding Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">Welding Machine</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bending Machine -->
+      <div class="col-md-4 col-sm-6 d-flex">
+        <div class="card border-0 shadow-sm rounded-4 flex-fill">
+          <img src="assets/img/work/bending.png" class="card-img-top rounded-top-4" alt="Bending Machine">
+          <div class="card-body py-2">
+            <h6 class="fw-semibold text-primary mb-0 small">Bending Machine</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Supporting Machines Section -->
+
+
+
+<!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us py-4" style="color: #fff; background-color: #0a1a2f;">
+  <div class="container text-center">
+
+    <div class="section-title mb-2">
+      <h2 class="fw-bold mb-1" style="color: #fff;">Why Us</h2>
+    </div>
+
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <p class="mb-3">
+        Established in 2025, our company was founded with a vision to deliver high-quality, innovative, and
+        precision-based manufacturing solutions. Although a young company, we are built upon a strong
+        foundation of professional experience in mechanical design, fabrication, and industrial engineering.
+      </p>
+      <p class="mb-3">
+        We are committed to becoming a trusted partner for various industrial sectors by providing products
+        that meet the highest standards of precision and efficiency. Supported by skilled professionals and
+        modern technology, we continuously develop manufacturing processes that are effective, safe, and
+        quality-driven.
+      </p>
+      <p class="mb-0">
+        We focus not only on production results but also on building long-term relationships with our clients
+        through service excellence, continuous innovation, and precision in every detail of our work.
+      </p>
+    </div>
+
+  </div>
+</section>
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact section-bg">
       <div class="container">
@@ -568,11 +702,9 @@ allows it to gain customer insights through data analysis.
 
           <div class="col-lg-4 col-md-6">
             <div class="contact-about">
-              <h3>Our-Compnay</h3>
-              <p>Delivering relevant technologies for our times</p>
-              <div class="social-links">
-                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
-              </div>
+              <h3>Dsin Manufacturing</h3>
+              <p>Crafting Precision, Delivering Excellence</p>
+              
             </div>
           </div>
 
@@ -580,12 +712,12 @@ allows it to gain customer insights through data analysis.
             <div class="info">
               <div>
                 <i class="icofont-google-map"></i>
-                <p>Velile Estate, 123 Vamba Rd, Johannesburg, Gauteng, 2000</p>
+                <p>Bandar Jaya Bar., Kec. Terbanggi Besar, Kabupaten Lampung Tengah, Lampung 34163</p>
               </div>
 
               <div>
                 <i class="icofont-envelope"></i>
-                <p>clients@Our-Compnay.com </p>
+                <p>dimasarif65@gmail.com </p>
               </div>
 
 
@@ -623,10 +755,6 @@ allows it to gain customer insights through data analysis.
 
       </div>
     </section><!-- End Contact Us Section -->
-   
-    <!-- ======= Map Section ======= -->
-    <section class="map">
-<iframe src="https://maps.google.com/maps?q=Government%20Ave,%20Pretoria,%200002&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	</section><!-- End Map Section -->
 
   </main><!-- End #main -->
 
@@ -634,7 +762,7 @@ allows it to gain customer insights through data analysis.
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Our-Compnay</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Dsin manufacturing</span></strong>. All Rights Reserved
       </div>
       
     </div>
@@ -652,6 +780,11 @@ allows it to gain customer insights through data analysis.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
 
 </body>
 

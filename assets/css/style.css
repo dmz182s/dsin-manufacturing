@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
-  background: #020a20;
+  background: #ffffff;
 }
 
 #header.header-scrolled {
-  background: #020a20;
+  background: #ffffff;
   height: 60px;
   padding: 10px 0;
 }
@@ -122,7 +122,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #d2ece9;
+  color: #000000;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #ffffff;
 }
 
 .mobile-nav-overly {
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/footer-bg.png") top center;
+  background: url("../img/footer-bg2.png") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -80px;
@@ -437,7 +437,7 @@ section {
 
 .section-bg, .section-bg a, .section-bg h2 {
   background-color: #203954;
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .section-title {
@@ -914,9 +914,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #203954;
+  background: #ffffff;
   padding: 30px 0;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
 }
 
@@ -930,4 +930,91 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/* ===== Carousel Text Styling ===== */
+.carousel-caption h2 {
+  color: #ffffff; /* warna putih untuk judul */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* biar lebih kontras di atas gambar */
+}
+
+.carousel-caption p {
+  color: #ffffff; /* warna kuning untuk teks deskripsi */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption.covid-block p {
+  color: #ffffff; /* khusus teks di slide COVID tetap putih */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 180px; /* sesuaikan tinggi gambar */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* membulat di ujung atas */
+}
+
+section.solutions {
+  background-color: #ffffff;
+}
+
+.machines .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.machines .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.machines .card-img-top {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.machines h3 {
+  font-size: 1.5rem;
+}
+
+.machines h6 {
+  font-size: 0.9rem;
+}
+
+section.machines {
+  background-color: #ffffff;
+}
+
+.why-us {
+  background: linear-gradient(180deg, #0a1a2f 0%, #132b4a 100%);
+  padding-top: 2rem !important;   /* sedikit lebih rapat */
+  padding-bottom: 2.5rem !important;
+}
+
+.why-us h2 {
+  margin-bottom: 0.5rem !important; /* jarak antarjudul & paragraf sangat rapat */
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.why-us p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+  text-align: justify;
+}
+
 
